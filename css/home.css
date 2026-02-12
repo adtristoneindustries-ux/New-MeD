@@ -1,0 +1,448 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--navy-blue) 0%, var(--medical-blue) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.hero-content {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 900px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.hero-text h1 span {
+  color: var(--accent-yellow);
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin: 2rem 0;
+}
+
+.hero-subtitle h3 {
+  font-size: 1.8rem;
+  color: var(--accent-yellow);
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle p {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.95);
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background: var(--accent-yellow);
+  color: var(--navy-blue);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Packages Banner */
+.packages-banner {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 4rem 2rem;
+  color: var(--white);
+}
+
+.package-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.package-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.package-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.packages-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.package-box {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  min-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: floatBox 3s ease-in-out infinite;
+}
+
+.package-box.featured {
+  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  border-color: var(--accent-yellow);
+  transform: scale(1.05);
+  animation: floatBoxFeatured 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes floatBox {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 5px 20px rgba(244, 196, 48, 0.2);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(244, 196, 48, 0.4);
+  }
+}
+
+@keyframes floatBoxFeatured {
+  0%, 100% {
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 10px 30px rgba(244, 196, 48, 0.3);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.08);
+    box-shadow: 0 25px 50px rgba(244, 196, 48, 0.5);
+  }
+}
+
+.package-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(244, 196, 48, 0.3);
+}
+
+.package-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--accent-yellow);
+}
+
+.package-box p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  min-height: 40px;
+}
+
+.package-price {
+  background: var(--accent-yellow);
+  color: var(--navy-blue);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.package-price:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(244, 196, 48, 0.5);
+}
+
+.package-price.featured-price {
+  background: var(--globe-green);
+  color: var(--white);
+}
+
+.contact-info {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.phone-numbers {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: var(--accent-yellow);
+  margin-top: 1rem !important;
+}
+
+/* Stats Section */
+.stats-section {
+  background: var(--accent-yellow);
+  padding: 3rem 2rem;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  min-width: 250px;
+  transition: transform 0.3s;
+}
+
+.stat-box:hover {
+  transform: scale(1.1);
+}
+
+.stat-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--navy-blue);
+  line-height: 1;
+}
+
+.stat-plus {
+  display: inline;
+  font-size: 3rem;
+  color: var(--navy-blue);
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy-blue);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Package Benefits */
+.package-benefits {
+  padding: 4rem 2rem;
+  background: var(--light-bg);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--navy-blue);
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.benefits-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 calc(25% - 1.5rem);
+  min-width: 280px;
+  max-width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border: 2px solid transparent;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--medical-blue), var(--accent-yellow));
+  transition: left 0.5s;
+}
+
+.benefit-card:hover::before {
+  left: 0;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(31, 111, 175, 0.2);
+  border-color: var(--medical-blue);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.benefit-icon svg {
+  fill: white;
+}
+
+.benefit-card h3 {
+  color: var(--navy-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  color: var(--dark-text);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .packages-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .package-box.featured {
+    transform: scale(1);
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-card {
+    max-width: 100%;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .service-card {
+    min-width: 100%;
+  }
+}
