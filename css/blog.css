@@ -1,6 +1,6 @@
 .blog-hero {
   padding: 8rem 2rem 4rem;
-  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  background: linear-gradient(135deg, #1FA6A8, #1F5DAA);
   color: var(--white);
   text-align: center;
 }
@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--medical-blue), var(--globe-green));
+  background: linear-gradient(90deg, #1FA6A8, #3C4DB3);
   transform: scaleX(0);
   transition: transform 0.4s;
 }
@@ -56,7 +56,7 @@
 .blog-image {
   width: 100%;
   height: 220px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1FA6A8 0%, #7B3CB4 100%);
   position: relative;
   overflow: hidden;
 }
@@ -88,7 +88,7 @@
 }
 
 .blog-content h3 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   font-size: 1.35rem;
   margin-bottom: 0.8rem;
   line-height: 1.4;
@@ -103,7 +103,7 @@
 }
 
 .read-more {
-  color: var(--medical-blue);
+  color: #1FA6A8;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -115,7 +115,7 @@
 
 .read-more:hover {
   gap: 0.8rem;
-  color: var(--navy-blue);
+  color: #1F5DAA;
 }
 
 /* Blog Detail Modal */
@@ -152,7 +152,7 @@
 .blog-detail-header {
   position: relative;
   height: 350px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1FA6A8 0%, #7B3CB4 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,7 +181,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: var(--navy-blue);
+  color: #1F5DAA;
   transition: all 0.3s;
   z-index: 2;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -207,7 +207,7 @@
 }
 
 .blog-detail-body h3 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   font-size: 1.8rem;
   margin: 2rem 0 1rem;
 }

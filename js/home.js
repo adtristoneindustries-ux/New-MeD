@@ -1,3 +1,18 @@
+// Hero Background Slideshow
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-bg img');
+const totalSlides = slides.length;
+
+if (slides.length > 0) {
+  slides[0].classList.add('active');
+  
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % totalSlides;
+    slides[currentSlide].classList.add('active');
+  }, 5000);
+}
+
 // GSAP Animations
 if (typeof gsap !== 'undefined') {
   // Hero animations
@@ -39,6 +54,41 @@ if (typeof gsap !== 'undefined') {
     opacity: 0,
     duration: 0.8,
     stagger: 0.2
+  });
+
+  // Leader section animation
+  gsap.from('.leader-content', {
+    scrollTrigger: {
+      trigger: '.leader-section',
+      start: 'top 80%'
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out'
+  });
+
+  gsap.from('.leader-content h2', {
+    scrollTrigger: {
+      trigger: '.leader-section',
+      start: 'top 80%'
+    },
+    scale: 0.8,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.3
+  });
+
+  gsap.from('.leader-content p', {
+    scrollTrigger: {
+      trigger: '.leader-section',
+      start: 'top 80%'
+    },
+    x: -50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.1,
+    delay: 0.5
   });
 
   // Stats counter animation

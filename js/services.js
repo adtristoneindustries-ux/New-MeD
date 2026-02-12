@@ -21,20 +21,22 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
     ease: 'power3.out'
   });
 
-  // Service cards animation on scroll
+  // Service cards animation - 3D flip effect
   gsap.utils.toArray('.service-item').forEach((item, index) => {
     gsap.from(item, {
       scrollTrigger: {
         trigger: item,
-        start: 'top 90%',
+        start: 'top 85%',
         toggleActions: 'play none none none',
         once: true
       },
-      y: 40,
+      rotationY: 90,
       opacity: 0,
-      duration: 0.6,
-      delay: index * 0.1,
-      ease: 'power2.out'
+      scale: 0.8,
+      duration: 0.8,
+      delay: index * 0.15,
+      ease: 'back.out(1.7)',
+      transformOrigin: 'center center'
     });
   });
 }

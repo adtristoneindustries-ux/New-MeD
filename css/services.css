@@ -1,6 +1,6 @@
 .services-hero {
   padding: 8rem 2rem 4rem;
-  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  background: linear-gradient(135deg, #1FA6A8, #1F5DAA);
   color: var(--white);
   text-align: center;
 }
@@ -15,9 +15,21 @@
   margin: 4rem auto;
   padding: 0 2rem 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 3rem;
   opacity: 1;
+}
+
+.service-item:nth-child(2),
+.service-item:nth-child(5) {
+  transform: scale(1.15);
+  z-index: 5;
+}
+
+.service-item:nth-child(7) {
+  grid-column: 2 / 3;
+  transform: scale(1.15);
+  z-index: 5;
 }
 
 .service-item {
@@ -26,7 +38,7 @@
   padding: 0;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.6s ease;
   border: 2px solid transparent;
   position: relative;
   opacity: 1;
@@ -36,41 +48,23 @@
 .service-item::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, var(--medical-blue), var(--accent-yellow));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.service-item::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(31, 111, 175, 0.03), rgba(244, 196, 48, 0.03));
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(31, 166, 168, 0.1), transparent);
   opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+  border-radius: 20px;
 }
 
 .service-item:hover::before {
-  transform: scaleX(1);
-}
-
-.service-item:hover::after {
   opacity: 1;
 }
 
 .service-item:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 25px 60px rgba(31, 111, 175, 0.25);
-  border-color: var(--medical-blue);
+  transform: scale(1.05);
+  box-shadow: 0 30px 70px rgba(31, 166, 168, 0.4);
+  border-color: #1FA6A8;
+  z-index: 10;
 }
 
 .service-header {
@@ -81,30 +75,13 @@
   gap: 1.5rem;
   position: relative;
   overflow: hidden;
-}
-
-.service-header::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(31, 111, 175, 0.1), transparent);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s ease, height 0.6s ease;
-}
-
-.service-item:hover .service-header::before {
-  width: 500px;
-  height: 500px;
+  z-index: 1;
 }
 
 .service-number {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  background: linear-gradient(135deg, #1FA6A8, #1F5DAA);
   color: var(--white);
   border-radius: 15px;
   display: flex;
@@ -113,19 +90,14 @@
   font-size: 1.8rem;
   font-weight: 800;
   flex-shrink: 0;
-  box-shadow: 0 5px 15px rgba(31, 111, 175, 0.3);
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 5px 15px rgba(31, 166, 168, 0.3);
+  transition: all 0.4s ease;
   position: relative;
   z-index: 1;
 }
 
-.service-item:hover .service-number {
-  transform: scale(1.15) rotate(-5deg);
-  box-shadow: 0 10px 25px rgba(31, 111, 175, 0.5);
-}
-
 .service-header h3 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -135,7 +107,7 @@
 }
 
 .service-item:hover .service-header h3 {
-  color: var(--medical-blue);
+  color: #1FA6A8;
 }
 
 .service-content {
@@ -169,7 +141,7 @@
 
 .service-content ul li:hover {
   padding-left: 2.3rem;
-  color: var(--medical-blue);
+  color: #1FA6A8;
 }
 
 .service-content ul li:last-child {
@@ -184,7 +156,7 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background: linear-gradient(135deg, var(--globe-green), #4CAF50);
+  background: linear-gradient(135deg, #3C4DB3, #7B3CB4);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -194,7 +166,7 @@
 
 .service-content ul li:hover::before {
   transform: translateY(-50%) scale(1.2) rotate(360deg);
-  box-shadow: 0 3px 10px rgba(110, 211, 111, 0.4);
+  box-shadow: 0 3px 10px rgba(123, 60, 180, 0.4);
 }
 
 .service-content ul li::after {
@@ -218,7 +190,7 @@
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: var(--navy-blue);
+  color: #1F5DAA;
   margin-bottom: 3rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -254,7 +226,7 @@
   left: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--medical-blue), var(--accent-yellow));
+  background: linear-gradient(90deg, #1FA6A8, #7B3CB4);
   transition: left 0.5s;
 }
 
@@ -264,14 +236,14 @@
 
 .benefit-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(31, 111, 175, 0.2);
-  border-color: var(--medical-blue);
+  box-shadow: 0 12px 35px rgba(31, 166, 168, 0.3);
+  border-color: #1FA6A8;
 }
 
 .benefit-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
+  background: linear-gradient(135deg, #1F5DAA, #1FA6A8);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -289,7 +261,7 @@
 }
 
 .benefit-card h3 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   margin-bottom: 0.8rem;
   font-size: 1.1rem;
   font-weight: 700;
@@ -303,8 +275,14 @@
 
 @media (max-width: 1024px) {
   .services-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+  
+  .service-item:nth-child(7) {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 

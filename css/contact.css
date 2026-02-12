@@ -1,6 +1,6 @@
 .contact-hero {
   padding: 8rem 2rem 4rem;
-  background: linear-gradient(135deg, var(--navy-blue), var(--medical-blue));
+  background: linear-gradient(135deg, #1F5DAA, #1FA6A8);
   color: var(--white);
   text-align: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .contact-info h2 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -35,7 +35,7 @@
 .info-icon {
   width: 50px;
   height: 50px;
-  background: var(--medical-blue);
+  background: #1FA6A8;
   color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -51,7 +51,7 @@
 }
 
 .info-text h4 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   margin-bottom: 0.5rem;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .contact-form-section h2 {
-  color: var(--navy-blue);
+  color: #1F5DAA;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -99,7 +99,7 @@
 .contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--medical-blue);
+  border-color: #1FA6A8;
 }
 
 .contact-form textarea {
@@ -110,18 +110,19 @@
 .contact-form button {
   width: 100%;
   padding: 1rem;
-  background: var(--medical-blue);
+  background: linear-gradient(135deg, #1FA6A8, #1F5DAA);
   color: var(--white);
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .contact-form button:hover {
-  background: var(--navy-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(31, 166, 168, 0.4);
 }
 
 .contact-form button:disabled {
@@ -175,14 +176,14 @@
 }
 
 .faq-question h4 {
-  color: var(--medical-blue);
+  color: #1FA6A8;
   margin: 0;
   font-size: 1.1rem;
 }
 
 .faq-icon {
   font-size: 1.5rem;
-  color: var(--medical-blue);
+  color: #1FA6A8;
   font-weight: bold;
   transition: transform 0.3s;
 }

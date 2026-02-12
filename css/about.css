@@ -1,6 +1,6 @@
 .about-hero {
   padding: 8rem 2rem 4rem;
-  background: linear-gradient(135deg, var(--navy-blue), var(--medical-blue));
+  background: linear-gradient(135deg, var(--med-blue), var(--med-teal));
   color: var(--white);
   text-align: center;
 }
@@ -10,205 +10,177 @@
   margin-bottom: 1rem;
 }
 
-/* Why MeD INDIA Section */
-.why-med-india {
-  padding: 4rem 2rem;
-  background: var(--light-bg);
-}
-
-.why-container {
-  max-width: 1400px;
+.content-container {
+  max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
+  padding: 0 2rem;
 }
 
-.why-content h2 {
-  color: var(--navy-blue);
+/* Vision Section */
+.vision-section {
+  padding: 5rem 2rem;
+  background: var(--med-bg-light);
+}
+
+.vision-section h2 {
+  color: var(--med-blue);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
-.why-points {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.vision-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--med-teal), var(--med-indigo));
 }
 
-.why-point {
-  display: flex;
-  gap: 1rem;
-  align-items: start;
-  background: var(--white);
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+.vision-section h2.animated::after {
+  animation: expandLine 1.5s ease-out forwards;
 }
 
-.why-point:hover {
-  transform: translateX(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.point-icon {
-  font-size: 2rem;
-  min-width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent-yellow);
-  border-radius: 50%;
-  color: var(--navy-blue);
-  font-weight: 700;
-}
-
-.point-text h3 {
-  color: var(--navy-blue);
+.vision-section p {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.point-text p {
+  line-height: 1.8;
   color: var(--dark-text);
-  line-height: 1.6;
-  font-size: 0.95rem;
+  text-align: center;
 }
 
-.guidance-boxes {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+/* Mission Section */
+.mission-section {
+  padding: 5rem 2rem;
+  background: var(--med-bg-light);
 }
 
-.guidance-box {
-  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
-  color: var(--white);
-  padding: 2rem;
+.mission-section h2 {
+  color: var(--med-indigo);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.mission-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--med-purple), var(--med-teal));
+}
+
+.mission-section h2.animated::after {
+  animation: expandLine 1.5s ease-out forwards;
+}
+
+.mission-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--dark-text);
+  text-align: center;
+}
+
+/* Core Values Section */
+.values-section {
+  padding: 5rem 2rem;
+  background: var(--med-bg-light);
+}
+
+.values-section h2 {
+  color: var(--med-purple);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.values-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--med-blue), var(--med-purple));
+}
+
+.values-section h2.animated::after {
+  animation: expandLine 1.5s ease-out forwards;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.value-card {
+  background: linear-gradient(135deg, var(--med-indigo), var(--med-blue));
+  padding: 2.5rem;
   border-radius: 15px;
-  border-left: 5px solid var(--accent-yellow);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.guidance-box:hover {
+.value-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(244, 196, 48, 0.3);
+  box-shadow: 0 15px 40px rgba(31, 166, 168, 0.3);
 }
 
-.guidance-box h3 {
-  color: var(--accent-yellow);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.guidance-box p {
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-/* Support Section */
-.support-section {
-  padding: 4rem 2rem;
-  background: var(--white);
-}
-
-.support-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
-.support-card {
-  background: linear-gradient(135deg, var(--medical-blue), var(--navy-blue));
-  color: var(--white);
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-}
-
-.support-card h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--accent-yellow);
-}
-
-.support-card h4 {
+.value-card h3 {
+  color: var(--med-teal);
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--white);
-}
-
-.support-item {
-  background: rgba(255,255,255,0.1);
-  padding: 1.5rem;
-  border-radius: 10px;
   margin-bottom: 1rem;
-  border-left: 4px solid var(--accent-yellow);
 }
 
-.support-item h5 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent-yellow);
+.value-card p {
+  color: var(--white);
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
-.support-item p {
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.neet-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.stat-badge {
-  background: var(--accent-yellow);
-  padding: 2.5rem;
-  border-radius: 20px;
+.values-footer {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--dark-text);
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
-}
-
-.stat-badge:hover {
-  transform: scale(1.1) rotate(-2deg);
-}
-
-.stat-value {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--navy-blue);
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  font-size: 1.1rem;
   font-weight: 600;
-  color: var(--navy-blue);
-  text-transform: uppercase;
+  font-style: italic;
 }
 
-@media (max-width: 968px) {
-  .why-container,
-  .support-container {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 768px) {
   .about-hero h1 {
     font-size: 2rem;
   }
 
-  .why-content h2 {
+  .vision-section h2,
+  .mission-section h2,
+  .values-section h2 {
     font-size: 2rem;
+  }
+
+  .vision-section p,
+  .mission-section p {
+    font-size: 1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
   }
 }
