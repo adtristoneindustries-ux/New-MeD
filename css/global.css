@@ -173,11 +173,36 @@ footer {
 .footer-section a {
   color: var(--white);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, padding-left 0.3s;
+  display: inline-block;
 }
 
 .footer-section a:hover {
   color: #7B3CB4;
+}
+
+.footer-section ul li a {
+  position: relative;
+  padding-left: 0;
+}
+
+.footer-section ul li a::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: opacity 0.3s, left 0.3s;
+  color: #7B3CB4;
+  font-weight: bold;
+}
+
+.footer-section ul li a:hover {
+  padding-left: 20px;
+}
+
+.footer-section ul li a:hover::before {
+  opacity: 1;
+  left: 0;
 }
 
 .social-icons {

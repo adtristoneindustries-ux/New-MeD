@@ -1,25 +1,43 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.stats-heading', {
+// Stats Section Animations
+gsap.to('.stats-circle-bg', {
   opacity: 1,
-  duration: 0.8,
+  scale: 1,
+  duration: 1,
+  ease: 'back.out(1.2)',
   scrollTrigger: {
     trigger: '.neet-stats',
-    start: 'top 80%',
+    start: 'top 70%',
     once: true
   }
 });
 
-gsap.utils.toArray('.stat-item').forEach((item, i) => {
-  gsap.to(item, {
+gsap.utils.toArray('.stat-row').forEach((row, i) => {
+  gsap.to(row, {
     opacity: 1,
-    scale: 1,
+    x: 0,
     duration: 0.6,
-    delay: 0.2 + (i * 0.1),
-    ease: 'back.out(1.5)',
+    delay: 0.3 + (i * 0.15),
+    ease: 'power2.out',
     scrollTrigger: {
-      trigger: '.stats-grid',
-      start: 'top 75%',
+      trigger: '.stats-circle-bg',
+      start: 'top 70%',
+      once: true
+    }
+  });
+});
+
+gsap.utils.toArray('.stat-divider').forEach((divider, i) => {
+  gsap.to(divider, {
+    opacity: 1,
+    scaleX: 1,
+    duration: 0.5,
+    delay: 0.5 + (i * 0.15),
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: '.stats-circle-bg',
+      start: 'top 70%',
       once: true
     }
   });
@@ -42,26 +60,33 @@ function animateCounter(el) {
 }
 
 ScrollTrigger.create({
-  trigger: '.stats-grid',
+  trigger: '.stats-circle-bg',
   start: 'top 70%',
   once: true,
   onEnter: () => {
-    document.querySelectorAll('.stat-num').forEach(animateCounter);
-    
-    document.querySelectorAll('.stat-circle').forEach((circle, i) => {
-      const progress = circle.querySelector('.circle-progress');
-      const percent = parseInt(circle.getAttribute('data-percent'));
-      const color = progress.getAttribute('data-color');
-      const circumference = 534;
-      const offset = circumference - (percent / 100) * circumference;
-      
-      progress.style.stroke = color;
-      
-      setTimeout(() => {
-        progress.style.strokeDashoffset = offset;
-      }, 300 + (i * 150));
-    });
+    document.querySelectorAll('.stat-number').forEach(animateCounter);
   }
+});
+
+// Icon hover animations
+gsap.utils.toArray('.stat-icon-box').forEach((icon) => {
+  icon.addEventListener('mouseenter', () => {
+    gsap.to(icon, {
+      scale: 1.15,
+      rotation: 10,
+      duration: 0.3,
+      ease: 'back.out(2)'
+    });
+  });
+  
+  icon.addEventListener('mouseleave', () => {
+    gsap.to(icon, {
+      scale: 1,
+      rotation: 0,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  });
 });
 
 // Package Tab Switching with Hover
