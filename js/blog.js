@@ -1,371 +1,235 @@
-// Blog data
 const blogData = [
   {
     id: 1,
-    title: 'Complete Guide to NEET 2024 Counseling Process',
-    date: 'March 15, 2024',
-    author: 'Admin',
-    excerpt: 'Everything you need to know about NEET counseling - from registration to seat allotment. Learn about AIQ, state quota, and choice filling strategies.',
-    content: `
-      <h3>Understanding NEET Counseling</h3>
-      <p>NEET counseling is a crucial step after clearing the NEET exam. It determines which medical college you'll get admission to based on your rank, preferences, and seat availability.</p>
-      
-      <h3>Types of Counseling</h3>
-      <p><strong>All India Quota (AIQ):</strong> Conducted by MCC for 15% seats in government colleges and 100% seats in central universities.</p>
-      <p><strong>State Quota:</strong> Conducted by respective state authorities for 85% seats in state government colleges.</p>
-      <p><strong>Deemed/Private Universities:</strong> Separate counseling conducted by individual institutions.</p>
-      
-      <h3>Counseling Process Steps</h3>
-      <ul>
-        <li>Registration on official counseling portal</li>
-        <li>Choice filling and locking</li>
-        <li>Seat allotment based on rank and preferences</li>
-        <li>Reporting to allotted college</li>
-        <li>Document verification</li>
-      </ul>
-      
-      <h3>Important Documents Required</h3>
-      <ul>
-        <li>NEET Admit Card and Score Card</li>
-        <li>Class 10th and 12th Mark Sheets</li>
-        <li>Category Certificate (if applicable)</li>
-        <li>Domicile Certificate</li>
-        <li>ID Proof (Aadhar Card)</li>
-        <li>Passport size photographs</li>
-      </ul>
-      
-      <h3>Choice Filling Strategy</h3>
-      <p>Fill maximum choices (up to 500 in AIQ). Start with dream colleges, then realistic options, and include safe choices. Consider location, fees, and college reputation.</p>
-    `
+    title: 'January 2025: NEET 2025 Prep Essentials – Syllabus Focus and India/Abroad Pathways',
+    date: 'January 2025',
+    author: 'MeD INDIA',
+    excerpt: '2025 is your year to shine – NEET UG prep is in full swing! NTA is set to release the official notification soon...',
+    content: '<h3>Hey Students and Parents!</h3><p>2025 is your year to shine – NEET UG prep is in full swing! NTA is set to release the official notification soon; keep an eye on neet.nta.nic.in for application dates. In India, exciting govt news: NMC has added 9,075 new MBBS seats, bringing the total to 1,26,600 – more chances for top govt colleges!</p><p><strong>Dreaming abroad?</strong> Let us explore! The Philippines is a game-changer for Indian students: With its US-style curriculum, full English-medium classes, NMC/WHO recognition, and high FMGE pass rates (up to 50% in top unis like UV Gullas), it is perfect for seamless return to India. Affordable total costs (₹15-35 lakhs) and strong clinical training make it irresistible!</p><p>Equally appealing are other destinations: Russia offers prestigious, NMC-approved programs at ₹18-40 lakhs with excellent FMGE prep; Kazakhstan provides safe, modern unis at ₹18-30 lakhs. Which path excites you?</p><p><strong>Pro Tip:</strong> Dive into Biology (360 marks) now! Parents, foster a supportive study vibe. Your white coat journey is just beginning – let us crush it!</p>'
   },
   {
     id: 2,
-    title: 'Top 10 Medical Colleges in India 2024',
-    date: 'March 10, 2024',
-    author: 'Admin',
-    excerpt: 'Discover the best medical colleges in India based on NIRF rankings, infrastructure, faculty, and placement records.',
-    content: `
-      <h3>Best Medical Colleges in India</h3>
-      <p>India has some of the finest medical institutions in the world. Here's our list of top 10 medical colleges based on various parameters.</p>
-      
-      <h3>Top 10 List</h3>
-      <ul>
-        <li><strong>AIIMS Delhi</strong> - The premier medical institute with world-class facilities</li>
-        <li><strong>PGIMER Chandigarh</strong> - Excellence in medical education and research</li>
-        <li><strong>CMC Vellore</strong> - Top private medical college with excellent infrastructure</li>
-        <li><strong>KGMU Lucknow</strong> - One of the oldest and most prestigious medical colleges</li>
-        <li><strong>JIPMER Puducherry</strong> - Central institute with excellent academics</li>
-        <li><strong>BHU Varanasi</strong> - Historic institution with modern facilities</li>
-        <li><strong>MAMC Delhi</strong> - Top state government medical college</li>
-        <li><strong>AFMC Pune</strong> - Premier armed forces medical college</li>
-        <li><strong>SGPGI Lucknow</strong> - Excellence in postgraduate medical education</li>
-        <li><strong>NIMHANS Bangalore</strong> - Leading institute for neurosciences</li>
-      </ul>
-      
-      <h3>Selection Criteria</h3>
-      <p>These colleges were selected based on NIRF rankings, faculty expertise, research output, infrastructure, hospital facilities, and student feedback.</p>
-    `
+    title: 'February 2025: NTA Releases NEET UG 2025 Notification – Key Dates and Admission Insights',
+    date: 'February 2025',
+    author: 'MeD INDIA',
+    excerpt: 'NTA announced NEET UG 2025 on Feb 7 – applications open till March 7! The May 4 exam unlocks over 1 lakh Indian MBBS seats...',
+    content: '<h3>Students and Parents, the moment is here!</h3><p>NTA announced NEET UG 2025 on Feb 7 – applications open till March 7! The May 4 exam unlocks over 1 lakh Indian MBBS seats. Govt update: 44 new medical colleges approved, adding 11,732 seats for 2025-26 – boosting access to quality education!</p><p><strong>Abroad adventures await!</strong> Why Philippines? Its English-taught, US-patterned MD programs shine with NMC approval, top FMGE success (20-50%), low fees (₹15-35 lakhs total), and global USMLE prep – ideal for ambitious Indian students!</p><p>On the flip side, Kyrgyzstan beckons with budget-friendly NMC unis at ₹15-25 lakhs and easy adaptation; Uzbekistan delivers solid clinical exposure at ₹20-35 lakhs. Imagine studying where your dreams align perfectly!</p><p><strong>Students, lock in Aadhaar/docs now. Parents, brainstorm Plans A and B – victory starts with strategy!</strong></p>'
   },
   {
     id: 3,
-    title: 'MBBS in Russia: Complete Guide for Indian Students',
-    date: 'March 5, 2024',
-    author: 'Admin',
-    excerpt: 'Why Russia is a popular destination for MBBS? Learn about top universities, admission process, fees, and living expenses.',
-    content: `
-      <h3>Why Choose Russia for MBBS?</h3>
-      <p>Russia has become one of the most preferred destinations for Indian students pursuing MBBS abroad due to affordable fees, quality education, and MCI/NMC recognition.</p>
-      
-      <h3>Top Medical Universities in Russia</h3>
-      <ul>
-        <li>Kazan Federal University</li>
-        <li>First Moscow State Medical University</li>
-        <li>Peoples' Friendship University of Russia</li>
-        <li>Crimea Federal University</li>
-        <li>Bashkir State Medical University</li>
-      </ul>
-      
-      <h3>Admission Process</h3>
-      <p>No entrance exam required. Admission is based on NEET qualification and 12th marks. The process is simple and straightforward with minimal documentation.</p>
-      
-      <h3>Fee Structure</h3>
-      <p>Total course fee ranges from ₹15-25 lakhs for 6 years, which is significantly lower than private medical colleges in India.</p>
-      
-      <h3>Living Expenses</h3>
-      <p>Monthly living expenses including accommodation, food, and transportation: ₹15,000 - ₹25,000.</p>
-    `
+    title: 'March 2025: NEET Correction Window Open – Refine Your Application',
+    date: 'March 2025',
+    author: 'MeD INDIA',
+    excerpt: 'NTA correction window: March 9-11 – tweak those forms to perfection! NEET powers India 1+ lakh seats...',
+    content: '<h3>Parents and Future Docs, do not skip this!</h3><p>NTA correction window: March 9-11 – tweak those forms to perfection! NEET powers India 1+ lakh seats; govt news: No big policy overhauls, but enhanced counseling transparency for fair play.</p><p><strong>Turn to abroad?</strong> Philippines captivates with affordable excellence: NMC/WHO-listed unis, English immersion, high FMGE rates (top performers at 50%+), and total costs ₹15-35 lakhs – plus safe, vibrant campuses!</p><p>Matching that appeal: Georgia EU-standard education at ₹20-40 lakhs with NMC nod; Russia for prestige and FMGE strength at ₹18-40 lakhs. What if your backup plan becomes your best adventure?</p><p><strong>Amp up Physics/Chem revisions. Parents, keep spirits high – every step counts!</strong></p>'
   },
   {
     id: 4,
-    title: 'Management Quota Admissions: Facts vs Myths',
-    date: 'February 28, 2024',
-    author: 'Admin',
-    excerpt: 'Clear all your doubts about management quota admissions. Learn about the legitimate process and avoid fraudulent practices.',
-    content: `
-      <h3>What is Management Quota?</h3>
-      <p>Management quota is a legitimate admission process where private medical colleges reserve a certain percentage of seats (usually 15-25%) for direct admissions.</p>
-      
-      <h3>Common Myths Debunked</h3>
-      <p><strong>Myth 1:</strong> Management quota is illegal - FALSE. It's a legal process approved by regulatory bodies.</p>
-      <p><strong>Myth 2:</strong> No NEET required - FALSE. NEET qualification is mandatory for all MBBS admissions.</p>
-      <p><strong>Myth 3:</strong> Degree not valid - FALSE. The degree is equally valid as regular quota.</p>
-      
-      <h3>Legitimate Process</h3>
-      <ul>
-        <li>NEET qualification is mandatory</li>
-        <li>Direct application to college</li>
-        <li>Transparent fee structure</li>
-        <li>Proper documentation and receipts</li>
-        <li>Same curriculum and degree as merit students</li>
-      </ul>
-      
-      <h3>How to Avoid Fraud</h3>
-      <p>Always deal directly with college authorities, verify college recognition, get proper receipts, and avoid agents promising guaranteed admissions.</p>
-    `
+    title: 'April 2025: Admit Cards Out – Exam Day Strategies for NEET 2025',
+    date: 'April 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Admit cards dropped April 30 – verify your center ASAP! May 4 exam looms; in India, snag govt seats (over 55,000 total) with 600+ scores...',
+    content: '<h3>The thrill builds, Students and Parents!</h3><p>Admit cards dropped April 30 – verify your center ASAP! May 4 exam looms; in India, snag govt seats (over 55,000 total) with 600+ scores. NTA ramps up biometrics for zero leaks – fair game assured!</p><p><strong>Abroad calling?</strong> Philippines leads the charge: US-based system, NMC-approved, stellar FMGE pass (20-50%), English ease, and budget fees ₹15-35 lakhs – dream big with real-world clinicals!</p><p>Equally enticing: Kazakhstan safe havens at ₹18-30 lakhs with modern infra; Kyrgyzstan for quick, affordable starts at ₹15-25 lakhs. Picture yourself thriving globally – exciting, right?</p><p><strong>Students, nail full mocks for timing. Parents, be the calm in the storm – you have prepared for this win!</strong></p>'
   },
   {
     id: 5,
-    title: 'How to Choose the Right Medical College',
-    date: 'February 20, 2024',
-    author: 'Admin',
-    excerpt: 'Important factors to consider when selecting a medical college - location, fees, infrastructure, faculty, and career prospects.',
-    content: `
-      <h3>Key Factors to Consider</h3>
-      
-      <h3>1. Recognition and Accreditation</h3>
-      <p>Ensure the college is recognized by NMC (National Medical Commission) and has proper accreditation. Check the annual intake and recognition status.</p>
-      
-      <h3>2. Infrastructure and Facilities</h3>
-      <p>Visit the campus if possible. Check for well-equipped labs, library, hospital facilities, hostel accommodation, and sports facilities.</p>
-      
-      <h3>3. Faculty Quality</h3>
-      <p>Research about the faculty-student ratio, qualifications of professors, and their teaching methodology.</p>
-      
-      <h3>4. Hospital Attached</h3>
-      <p>A good teaching hospital with adequate patient flow is crucial for clinical exposure and practical learning.</p>
-      
-      <h3>5. Fee Structure</h3>
-      <p>Consider the total cost including tuition fees, hostel charges, and other expenses. Ensure transparency in fee structure.</p>
-      
-      <h3>6. Location</h3>
-      <p>Consider proximity to home, climate, language, and overall environment of the city.</p>
-      
-      <h3>7. Placement and Alumni Network</h3>
-      <p>Check the college's track record in PG entrance exams and career opportunities for graduates.</p>
-    `
+    title: 'May 2025: NEET UG 2025 Conducted – Post-Exam Analysis and Results Await',
+    date: 'May 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Exam aced on May 4; provisional keys ~June 3. 20+ lakh warriors appeared – results open Indian counseling doors...',
+    content: '<h3>What a milestone, Everyone!</h3><p>Exam aced on May 4; provisional keys ~June 3. 20+ lakh warriors appeared – results open Indian counseling doors. Govt reaffirms: Transparent scoring, no re-exam drama!</p><p><strong>Abroad horizons expand!</strong> Philippines? It is a powerhouse: High FMGE success (up to 50%), NMC/WHO creds, English-medium US curriculum, and low total costs ₹15-35 lakhs – perfect for Indian trailblazers!</p><p>Balance with Uzbekistan clinical gems at ₹20-35 lakhs; Georgia quality at ₹20-40 lakhs, all NMC-approved. Which country sparks your passion?</p><p><strong>Unwind, analyze. Parents, chat about versatile options – your success story unfolds!</strong></p>'
   },
   {
     id: 6,
-    title: 'NEET Preparation Tips for 2024 Aspirants',
-    date: 'February 15, 2024',
-    author: 'Admin',
-    excerpt: 'Effective study strategies, time management tips, and resources to help you crack NEET with a high score.',
-    content: `
-      <h3>Preparation Strategy</h3>
-      
-      <h3>1. Understand the Syllabus</h3>
-      <p>NEET covers Physics, Chemistry, and Biology (Botany & Zoology) from Class 11 and 12 NCERT. Focus on NCERT first.</p>
-      
-      <h3>2. Create a Study Schedule</h3>
-      <p>Dedicate 8-10 hours daily. Divide time equally among subjects. Include revision and practice tests in your schedule.</p>
-      
-      <h3>3. NCERT is Your Bible</h3>
-      <p>Read NCERT thoroughly, especially Biology. Many questions come directly from NCERT.</p>
-      
-      <h3>4. Practice Mock Tests</h3>
-      <p>Take at least 2-3 mock tests weekly. Analyze your mistakes and work on weak areas.</p>
-      
-      <h3>5. Focus on Weak Areas</h3>
-      <p>Identify topics where you're weak and give them extra time. Don't ignore any chapter completely.</p>
-      
-      <h3>6. Revision is Key</h3>
-      <p>Revise regularly. Make short notes and formulas for quick revision before exam.</p>
-      
-      <h3>7. Stay Healthy</h3>
-      <p>Maintain good sleep schedule, eat healthy, exercise regularly, and take breaks to avoid burnout.</p>
-    `
+    title: 'June 2025: NEET Results Declared – Kickstart Counseling',
+    date: 'June 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Scores out ~June 14! Leverage for MCC AIQ; India buzz: Govt adds 10,023 new govt seats by 2028-29...',
+    content: '<h3>Cheers to results day, Students and Parents!</h3><p>Scores out ~June 14! Leverage for MCC AIQ; India buzz: Govt adds 10,023 new govt seats by 2028-29, plus FMGE tweaks for abroad returnees.</p><p><strong>Abroad vibes?</strong> Philippines excels: Top FMGE rates (20-50%), affordable ₹15-35 lakhs, NMC-listed unis with strong US-style training – your gateway to global medicine!</p><p>Pair it with Russia renowned programs at ₹18-40 lakhs; Kazakhstan value at ₹18-30 lakhs. Imagine the doors opening – thrilling!</p><p><strong>Students, use rank tools. Parents, honor the hustle – brighter paths ahead!</strong></p>'
   },
   {
     id: 7,
-    title: 'State Quota vs All India Quota: Which is Better?',
-    date: 'February 10, 2024',
-    author: 'Admin',
-    excerpt: 'Understand the differences between state quota and AIQ counseling. Learn which option suits you best based on your rank.',
-    content: `
-      <h3>Understanding the Quotas</h3>
-      
-      <h3>All India Quota (AIQ)</h3>
-      <p>15% seats in government medical colleges across India. Open to all Indian citizens regardless of domicile. Conducted by MCC.</p>
-      
-      <h3>State Quota</h3>
-      <p>85% seats in state government colleges. Reserved for domicile students of that state. Conducted by state authorities.</p>
-      
-      <h3>Key Differences</h3>
-      <ul>
-        <li><strong>Eligibility:</strong> AIQ - All Indians | State - State domicile required</li>
-        <li><strong>Competition:</strong> AIQ - National level | State - State level</li>
-        <li><strong>Seat Availability:</strong> AIQ - 15% | State - 85%</li>
-        <li><strong>Counseling Authority:</strong> AIQ - MCC | State - State authorities</li>
-      </ul>
-      
-      <h3>Which is Better for You?</h3>
-      <p><strong>Choose AIQ if:</strong> You have a very good rank, want to study outside your state, or your state has limited medical colleges.</p>
-      <p><strong>Choose State Quota if:</strong> You want to study in your home state, have domicile certificate, or your state has good medical colleges.</p>
-      
-      <h3>Pro Tip</h3>
-      <p>Participate in both counselings to maximize your chances. You can always choose the better option if you get seats in both.</p>
-    `
+    title: 'July 2025: MCC Unveils NEET Counseling Schedule – Round 1 Launches',
+    date: 'July 2025',
+    author: 'MeD INDIA',
+    excerpt: 'MCC timeline July 12; Round 1 reg July 21-28. Lock Indian seats – govt expands quotas for underserved regions!',
+    content: '<h3>Action time, Families!</h3><p>MCC timeline July 12; Round 1 reg July 21-28. Lock Indian seats – govt expands quotas for underserved regions!</p><p><strong>Abroad?</strong> Philippines stands tall: NMC-approved, high FMGE (50%+ in elites), English ease, ₹15-35 lakhs total – clinical excellence awaits!</p><p>Complement with Kyrgyzstan budget bliss at ₹15-25 lakhs; Uzbekistan infra at ₹20-35 lakhs. Ready to choose your epic route?</p><p><strong>Prioritize smartly. Parents, docs ready – seize the moment!</strong></p>'
   },
   {
     id: 8,
-    title: 'MBBS Abroad: Country Comparison Guide',
-    date: 'February 5, 2024',
-    author: 'Admin',
-    excerpt: 'Compare popular countries for MBBS - Russia, China, Philippines, Georgia, and more. Find the best fit for you.',
-    content: `
-      <h3>Popular Countries for MBBS</h3>
-      
-      <h3>Russia</h3>
-      <p><strong>Pros:</strong> Affordable fees (₹15-25L), quality education, NMC recognized<br>
-      <strong>Cons:</strong> Cold climate, language barrier<br>
-      <strong>Best for:</strong> Budget-conscious students</p>
-      
-      <h3>China</h3>
-      <p><strong>Pros:</strong> Modern infrastructure, English medium, affordable<br>
-      <strong>Cons:</strong> Cultural differences, food adaptation<br>
-      <strong>Best for:</strong> Students wanting modern facilities</p>
-      
-      <h3>Philippines</h3>
-      <p><strong>Pros:</strong> English speaking, similar culture, US-based curriculum<br>
-      <strong>Cons:</strong> Higher fees than Russia/China<br>
-      <strong>Best for:</strong> Students preferring English environment</p>
-      
-      <h3>Georgia</h3>
-      <p><strong>Pros:</strong> European education system, safe country, affordable<br>
-      <strong>Cons:</strong> Limited Indian community<br>
-      <strong>Best for:</strong> Students wanting European exposure</p>
-      
-      <h3>Kazakhstan</h3>
-      <p><strong>Pros:</strong> Very affordable, easy admission, growing Indian community<br>
-      <strong>Cons:</strong> Extreme weather<br>
-      <strong>Best for:</strong> Budget students with good adaptability</p>
-      
-      <h3>How to Choose?</h3>
-      <p>Consider your budget, climate preference, language comfort, and career goals. Research thoroughly and consult with education counselors.</p>
-    `
+    title: 'August 2025: NEET Counseling Rounds Intensify – State Quota & Abroad Tips',
+    date: 'August 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Round 2 allotments late August; state quotas amp Indian odds. NTA confirms: No age cap shifts...',
+    content: '<h3>The race heats up, Aspiring Healers!</h3><p>Round 2 allotments late August; state quotas amp Indian odds. NTA confirms: No age cap shifts.</p><p><strong>Abroad allure?</strong> Philippines for FMGE prowess (20-50%), affordable ₹15-35 lakhs, US curriculum, NMC seal – transform your future!</p><p>Match with Georgia EU vibes at ₹20-40 lakhs; Russia prestige at ₹18-40 lakhs. Which inspires your inner doctor?</p><p><strong>Upgrade thoughtfully. Parents, finance wisely – worlds of opportunity!</strong></p>'
   },
   {
     id: 9,
-    title: 'Scholarships for Medical Students in India',
-    date: 'January 30, 2024',
-    author: 'Admin',
-    excerpt: 'Comprehensive list of scholarships available for MBBS students. Learn about eligibility criteria and application process.',
-    content: `
-      <h3>Government Scholarships</h3>
-      
-      <h3>1. National Scholarship Portal (NSP)</h3>
-      <p>Various scholarships for SC/ST/OBC/Minority students. Amount: ₹20,000 - ₹50,000 per year.</p>
-      
-      <h3>2. Post Matric Scholarship</h3>
-      <p>For students from reserved categories. Covers tuition fees and maintenance allowance.</p>
-      
-      <h3>3. Merit-cum-Means Scholarship</h3>
-      <p>For economically weaker students with good academic record. Amount: ₹20,000 per year.</p>
-      
-      <h3>Private Scholarships</h3>
-      
-      <h3>1. Inspire Scholarship</h3>
-      <p>For top 1% students in board exams. Amount: ₹80,000 per year for 5 years.</p>
-      
-      <h3>2. Sitaram Jindal Foundation</h3>
-      <p>For meritorious students from economically weaker sections.</p>
-      
-      <h3>3. Dr. APJ Abdul Kalam Scholarship</h3>
-      <p>For students with excellent academic records.</p>
-      
-      <h3>How to Apply?</h3>
-      <ul>
-        <li>Register on National Scholarship Portal</li>
-        <li>Fill application form with accurate details</li>
-        <li>Upload required documents</li>
-        <li>Submit before deadline</li>
-        <li>Track application status regularly</li>
-      </ul>
-      
-      <h3>Required Documents</h3>
-      <ul>
-        <li>Income certificate</li>
-        <li>Caste certificate (if applicable)</li>
-        <li>Previous year mark sheets</li>
-        <li>Bank account details</li>
-        <li>Aadhar card</li>
-      </ul>
-    `
+    title: 'September 2025: NEET Rounds Conclude – Mop-Up and Abroad Intakes',
+    date: 'September 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Round 3 reporting early Oct; stray fills gaps. Govt: New AIIMS push total seats higher!',
+    content: '<h3>Wrapping strong, Teams!</h3><p>Round 3 reporting early Oct; stray fills gaps. Govt: New AIIMS push total seats higher!</p><p><strong>Abroad intakes peak!</strong> Philippines tops: High FMGE (up to 50%), NMC/WHO, ₹15-35 lakhs, safe English hubs – your success launchpad!</p><p>Add Kazakhstan modern edge at ₹18-30 lakhs; Kyrgyzstan affordability at ₹15-25 lakhs. Envision the adventure!</p><p><strong>Gear up for classes. Parents, check NMC lists – smooth sailing!</strong></p>'
+  },
+  {
+    id: 10,
+    title: 'October 2025: Post-NEET Review – Prep for 2026 and Abroad Planning',
+    date: 'October 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Counseling closes; NEET 2026 looms. Govt steady: Watch quota growth...',
+    content: '<h3>Reflect and recharge, Students and Parents!</h3><p>Counseling closes; NEET 2026 looms. Govt steady: Watch quota growth.</p><p><strong>Abroad?</strong> Philippines ideal: FMGE leaders (20-50%), ₹15-35 lakhs, US-system NMC unis – empower your dreams!</p><p>Balance with Uzbekistan exposure at ₹20-35 lakhs; Georgia standards at ₹20-40 lakhs. What is your next chapter?</p><p><strong>Target coaching. Parents, goal-set – resilience rocks!</strong></p>'
+  },
+  {
+    id: 11,
+    title: 'November 2025: MBBS Abroad Trends – NMC Guidelines for 2026',
+    date: 'November 2025',
+    author: 'MeD INDIA',
+    excerpt: 'NMC: 54-month + internship must for FMGE. India: Seat surges continue...',
+    content: '<h3>Trending now, Future Medics!</h3><p>NMC: 54-month + internship must for FMGE. India: Seat surges continue.</p><p><strong>Abroad spotlight:</strong> Philippines trends high – FMGE success (50%+), affordable ₹15-35 lakhs, English NMC paths!</p><p>Trends in Russia (₹18-40 lakhs prestige); Kazakhstan (₹18-30 lakhs safety). Dive in – global medicine calls!</p><p><strong>Research deep. Parents, vs. India costs – smart wins!</strong></p>'
+  },
+  {
+    id: 12,
+    title: 'December 2025: NEET 2025 Stray Rounds – NMC Syllabus Update for 2026',
+    date: 'December 2025',
+    author: 'MeD INDIA',
+    excerpt: 'Stray round Dec 18-31; NMC tweaks NEET 2026 syllabus Dec 22 – minor Biology/Physics shifts...',
+    content: '<h3>Final pushes, Everyone!</h3><p>Stray round Dec 18-31; NMC tweaks NEET 2026 syllabus Dec 22 – minor Biology/Physics shifts.</p><p><strong>Abroad:</strong> Philippines for FMGE edge (20-50%), ₹15-35 lakhs, clinical NMC excellence!</p><p>Georgia at ₹20-40 lakhs EU; Armenia emerging at similar value. Refresh for 2026!</p><p><strong>Adapt plans. Parents, motivate – new beginnings!</strong></p>'
+  },
+  {
+    id: 13,
+    title: 'January 2026: NTA NEET 2026 Syllabus & Advisory Released – Start Prep!',
+    date: 'January 2026',
+    author: 'MeD INDIA',
+    excerpt: 'Syllabus Jan 8; advisory Jan 5. Exam May 3! India: More govt seats rolled out...',
+    content: '<h3>Fresh start, Champs!</h3><p>Syllabus Jan 8; advisory Jan 5. Exam May 3! India: More govt seats rolled out.</p><p><strong>Abroad:</strong> Philippines shines – high FMGE (up to 50%), ₹15-35 lakhs English US-style, NMC-approved!</p><p>Russia prestige ₹18-40 lakhs; Uzbekistan balance ₹20-35 lakhs. Ignite that spark!</p><p><strong>Tackle updates. Parents, early checks – victory mode!</strong></p>'
+  },
+  {
+    id: 14,
+    title: 'February 2026: NEET UG 2026 Registration Begins – New Rules in Play',
+    date: 'February 2026',
+    author: 'MeD INDIA',
+    excerpt: 'Reg Feb 8-Mar 8! New: Aadhaar eKYC, live photos. Govt: Fairness front and center...',
+    content: '<h3>Go time, Dreamers!</h3><p>Reg Feb 8-Mar 8! New: Aadhaar eKYC, live photos. Govt: Fairness front and center.</p><p><strong>Abroad highlight:</strong> Philippines for US curriculum (₹15-35 lakhs), top FMGE rates, NMC vibes!</p><p>Kyrgyzstan budget ₹15-25 lakhs; Kazakhstan safe ₹18-30 lakhs. Your journey launches – exhilarating!</p><p><strong>Docs perfect. Parents, fee support – heal the world!</strong></p>'
   }
 ];
 
-// Open blog detail
-function openBlogDetail(blogId) {
-  const blog = blogData.find(b => b.id === blogId);
-  if (!blog) return;
+let blogCurrentPage = 1;
+
+function renderBlogs() {
+  const grid = document.getElementById('blogGrid');
+  if (!grid) return;
   
-  const detailHTML = `
-    <div class="blog-detail-content">
-      <div class="blog-detail-header">
-        <h2>${blog.title}</h2>
-        <button class="close-btn" onclick="closeBlogDetail()">✕</button>
-      </div>
-      <div class="blog-detail-body">
-        <div class="blog-detail-meta">
-          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg> ${blog.date}</span>
-          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> ${blog.author}</span>
+  const start = (blogCurrentPage - 1) * 9;
+  const end = blogCurrentPage === 1 ? 9 : 14;
+  const blogs = blogData.slice(start, end);
+  
+  grid.innerHTML = blogs.map(b => `
+    <article class="blog-card" data-id="${b.id}">
+      <div class="blog-image"></div>
+      <div class="blog-content">
+        <div class="blog-meta">
+          <span><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>${b.date}</span>
+          <span><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>${b.author}</span>
         </div>
-        ${blog.content}
+        <h3>${b.title}</h3>
+        <p>${b.excerpt}</p>
+        <a href="#" class="read-more" data-id="${b.id}">Read More →</a>
       </div>
-    </div>
-  `;
+    </article>
+  `).join('');
   
-  let detailDiv = document.querySelector('.blog-detail');
-  if (!detailDiv) {
-    detailDiv = document.createElement('div');
-    detailDiv.className = 'blog-detail';
-    document.body.appendChild(detailDiv);
-  }
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const pageInfo = document.getElementById('pageInfo');
   
-  detailDiv.innerHTML = detailHTML;
-  detailDiv.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  if (prevBtn) prevBtn.disabled = blogCurrentPage === 1;
+  if (nextBtn) nextBtn.disabled = blogCurrentPage === 2;
+  if (pageInfo) pageInfo.textContent = 'Page ' + blogCurrentPage + ' of 2';
+  
+  document.querySelectorAll('.blog-card').forEach(card => {
+    card.onclick = function() {
+      openModal(parseInt(this.getAttribute('data-id')));
+    };
+  });
+  
+  document.querySelectorAll('.read-more').forEach(link => {
+    link.onclick = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openModal(parseInt(this.getAttribute('data-id')));
+    };
+  });
+  
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-function closeBlogDetail() {
-  const detailDiv = document.querySelector('.blog-detail');
-  if (detailDiv) {
-    detailDiv.classList.remove('active');
+function openModal(id) {
+  const blog = blogData.find(b => b.id === id);
+  if (!blog) return;
+  
+  const modal = document.getElementById('blogModal');
+  const title = document.getElementById('modalTitle');
+  const meta = document.getElementById('modalMeta');
+  const content = document.getElementById('modalContent');
+  
+  if (title) title.textContent = blog.title;
+  if (meta) meta.innerHTML = '<span><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>' + blog.date + '</span><span><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>' + blog.author + '</span>';
+  if (content) content.innerHTML = blog.content;
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal() {
+  const modal = document.getElementById('blogModal');
+  if (modal) {
+    modal.style.display = 'none';
     document.body.style.overflow = '';
   }
 }
 
-// Close on outside click
-document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('blog-detail')) {
-    closeBlogDetail();
-  }
-});
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
 
-// Close on Escape key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeBlogDetail();
+function init() {
+  renderBlogs();
+  
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const closeBtn = document.getElementById('closeModal');
+  const modal = document.getElementById('blogModal');
+  
+  if (prevBtn) {
+    prevBtn.onclick = function() {
+      if (blogCurrentPage > 1) {
+        blogCurrentPage--;
+        renderBlogs();
+      }
+    };
   }
-});
-
-// Attach click handlers to blog cards
-document.addEventListener('DOMContentLoaded', () => {
-  const blogCards = document.querySelectorAll('.blog-card');
-  blogCards.forEach((card, index) => {
-    card.addEventListener('click', (e) => {
-      e.preventDefault();
-      openBlogDetail(index + 1);
-    });
-  });
-});
+  
+  if (nextBtn) {
+    nextBtn.onclick = function() {
+      if (blogCurrentPage < 2) {
+        blogCurrentPage++;
+        renderBlogs();
+      }
+    };
+  }
+  
+  if (closeBtn) closeBtn.onclick = closeModal;
+  
+  if (modal) {
+    modal.onclick = function(e) {
+      if (e.target.id === 'blogModal') closeModal();
+    };
+  }
+  
+  document.onkeydown = function(e) {
+    if (e.key === 'Escape') closeModal();
+  };
+}

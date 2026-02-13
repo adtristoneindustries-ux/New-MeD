@@ -130,6 +130,8 @@ footer {
   background: linear-gradient(135deg, #1F5DAA 0%, #111111 100%);
   color: var(--white);
   padding: 3rem 2rem 1rem;
+  width: 100%;
+  margin: 0;
 }
 
 .footer-container {
@@ -139,19 +141,33 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer-section {
+  width: 100%;
 }
 
 .footer-section h3 {
   color: #1FA6A8;
   margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .footer-section ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
   margin-bottom: 0.5rem;
+  line-height: 1.8;
 }
 
 .footer-section a {
@@ -206,6 +222,9 @@ footer {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.1);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* WhatsApp Button */

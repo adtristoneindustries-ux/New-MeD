@@ -91,6 +91,19 @@ document.addEventListener('DOMContentLoaded', () => {
       switchPackage(packageType);
     });
   });
+
+  // Handle hash navigation
+  if (window.location.hash === '#flash-tab') {
+    switchPackage('complete');
+    setTimeout(() => {
+      document.getElementById('flash-tab').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
+  } else if (window.location.hash === '#elite-tab') {
+    switchPackage('premium');
+    setTimeout(() => {
+      document.getElementById('elite-tab').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
+  }
 });
 
 // GSAP Animations for Package Section
