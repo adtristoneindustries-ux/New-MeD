@@ -4,7 +4,7 @@ A professional multi-page website for medical admission guidance and counseling 
 
 ## 🎯 Features
 
-- **8 Complete Pages**: Home, About, Services, MBBS India, MBBS Abroad, Packages, Blog, Contact
+- **9 Complete Pages**: Home, About, Services, NEET, MBBS India, MBBS Abroad, Packages, Blog, Contact
 - **Responsive Design**: Mobile-first approach with hamburger menu
 - **GSAP Animations**: Smooth scroll animations and transitions
 - **Auto Popup Form**: Lead generation form with EmailJS integration
@@ -31,6 +31,7 @@ A professional multi-page website for medical admission guidance and counseling 
 ├── index.html              # Home page
 ├── about.html              # About page
 ├── services.html           # Services page
+├── neet.html               # NEET page
 ├── mbbs-india.html         # MBBS India page
 ├── mbbs-abroad.html        # MBBS Abroad page
 ├── packages.html           # Packages page
@@ -42,6 +43,7 @@ A professional multi-page website for medical admission guidance and counseling 
 │   ├── home.css            # Home page styles
 │   ├── about.css           # About page styles
 │   ├── services.css        # Services page styles
+│   ├── neet.css            # NEET page styles
 │   ├── mbbs-india.css      # MBBS India styles
 │   ├── mbbs-abroad.css     # MBBS Abroad styles
 │   ├── packages.css        # Packages page styles
@@ -54,6 +56,7 @@ A professional multi-page website for medical admission guidance and counseling 
 │   ├── home.js             # Home page animations
 │   ├── about.js            # About page animations
 │   ├── services.js         # Services page logic
+│   ├── neet.js             # NEET page logic
 │   ├── mbbs-india.js       # MBBS India animations
 │   ├── mbbs-abroad.js      # MBBS Abroad animations
 │   ├── packages.js         # Packages page logic
@@ -75,21 +78,22 @@ A professional multi-page website for medical admission guidance and counseling 
 
 ## 📧 EmailJS Integration
 
-To enable email functionality:
+Email functionality is fully configured:
 
-1. Sign up at [EmailJS](https://www.emailjs.com/)
-2. Create an email service and template
-3. Update the following files with your credentials:
-   - `js/popup.js` - Line 2
-   - `js/contact.js` - Line 29
+### Popup Form
+- **Public Key**: `iX5aizFdNax10Jp4W`
+- **Service ID**: `service_3x6oz4q`
+- **Template ID**: `template_7rz4x1d`
+- **Recipient**: medindiacag@gmail.com
+- Shows once per browser session
 
-```javascript
-// Initialize EmailJS
-emailjs.init('YOUR_PUBLIC_KEY');
+### Contact Form
+- **Public Key**: `iX5aizFdNax10Jp4W`
+- **Service ID**: `service_3x6oz4q`
+- **Template ID**: `template_1sd101t`
+- **Recipient**: medindiacag@gmail.com
 
-// Send email
-await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData);
-```
+Both forms are ready to use. No additional setup required.
 
 ## 📱 WhatsApp Integration
 
@@ -134,6 +138,12 @@ Both popup and contact forms include:
 - Seat types information
 - Eligibility criteria
 - Admission strategy
+
+### NEET Page
+- NEET Flash Package
+- NEET Elite Package
+- Package comparison table
+- Benefits showcase
 
 ### MBBS Abroad Page
 - Country cards with hover effects
