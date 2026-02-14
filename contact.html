@@ -93,7 +93,7 @@
 
           <div class="form-group">
             <label for="contactEmail">Email Address *</label>
-            <input type="email" id="contactEmail" required>
+            <input type="email" id="contactEmail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|in|org|net|edu|gov|co\.in|ac\.in)$" placeholder="example@domain.com" required>
           </div>
         </div>
 
@@ -248,11 +248,11 @@
       <form id="popupForm" class="popup-form">
         <div class="form-group">
           <label for="popupName">Name *</label>
-          <input type="text" id="popupName" required>
+          <input type="text" id="popupName" pattern="[A-Za-z\s]{2,50}" minlength="2" maxlength="50" placeholder="Enter your full name" required>
         </div>
         <div class="form-group">
-          <label for="popupEmail">Email *</label>
-          <input type="email" id="popupEmail" required>
+          <label for="popupEmail">Email</label>
+          <input type="email" id="popupEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@domain.com">
         </div>
         <div class="form-group">
           <label for="popupMobile">Mobile *</label>
@@ -292,8 +292,12 @@
             <option value="West Bengal">West Bengal</option>
           </select>
         </div>
+        <div class="form-group">
+          <label for="popupMessage">Message</label>
+          <textarea id="popupMessage" rows="3" placeholder="Any additional information (optional)"></textarea>
+        </div>
         <button type="submit">Submit</button>
-        <div id="popupMessage" class="popup-message"></div>
+        <div id="popupMessageStatus" class="popup-message"></div>
       </form>
     </div>
   </div>

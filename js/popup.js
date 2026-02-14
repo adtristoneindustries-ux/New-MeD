@@ -1,7 +1,7 @@
-// Initialize EmailJS - Replace with your Public Key
-emailjs.init('YOUR_PUBLIC_KEY'); // Get from EmailJS Dashboard
+// Initialize EmailJS
+emailjs.init('iX5aizFdNax10Jp4W');
 
-// Show popup after 1 second with smooth animation
+// Show popup after 1 second only once per session
 setTimeout(() => {
   const popup = document.querySelector('.popup-overlay');
   if (popup && !sessionStorage.getItem('popupShown')) {
@@ -9,12 +9,11 @@ setTimeout(() => {
   }
 }, 1000);
 
-// Close popup - only with close button
+// Close popup
 const closeBtn = document.querySelector('.popup-close');
 if (closeBtn) {
   closeBtn.addEventListener('click', () => {
-    const popup = document.querySelector('.popup-overlay');
-    popup.classList.remove('active');
+    document.querySelector('.popup-overlay').classList.remove('active');
     sessionStorage.setItem('popupShown', 'true');
   });
 }
@@ -26,7 +25,7 @@ if (popupForm) {
     e.preventDefault();
     
     const submitBtn = popupForm.querySelector('button[type="submit"]');
-    const message = document.getElementById('popupMessage');
+    const message = document.getElementById('popupMessageStatus');
     const mobileInput = document.getElementById('popupMobile');
     const emailInput = document.getElementById('popupEmail');
     
@@ -49,20 +48,16 @@ if (popupForm) {
     submitBtn.textContent = 'Sending...';
     
     const formData = {
-      name: document.getElementById('popupName').value,
-      email: emailInput.value,
+      from_name: document.getElementById('popupName').value,
+      from_email: emailInput.value || 'Not provided',
       mobile: mobileInput.value,
       state: document.getElementById('popupState').value,
-      to_email: 'medindiacag@gmail.com' // Your company email
+      message: document.getElementById('popupMessage').value || 'No message',
+      to_email: 'medindiacag@gmail.com'
     };
     
     try {
-      // Send email via EmailJS
-      await emailjs.send(
-        'YOUR_SERVICE_ID',    // Replace with your Service ID
-        'YOUR_TEMPLATE_ID',   // Replace with your Template ID
-        formData
-      );
+      await emailjs.send('service_3x6oz4q', 'template_7rz4x1d', formData);
       
       message.className = 'popup-message success';
       message.textContent = 'Thank you! We will contact you soon.';

@@ -324,24 +324,59 @@
     grid-template-columns: 1fr;
     padding: 0 1rem 2rem;
     margin: 2rem auto;
+    gap: 2rem;
+  }
+
+  .service-item:nth-child(1),
+  .service-item:nth-child(2),
+  .service-item:nth-child(3),
+  .service-item:nth-child(4),
+  .service-item:nth-child(5),
+  .service-item:nth-child(6),
+  .service-item:nth-child(7) {
+    transform: scale(0.9);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .service-header {
-    padding: 1.5rem;
+    padding: 1.2rem;
+    gap: 1rem;
   }
 
   .service-number {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
   }
 
   .service-header h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .service-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  .service-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-content ul li {
+    padding: 0.6rem 0;
+    font-size: 0.85rem;
+    padding-left: 1.8rem;
+  }
+
+  .service-content ul li::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .service-content ul li::after {
+    left: 3px;
+    font-size: 0.7rem;
   }
 
   .benefits-grid {

@@ -33,8 +33,8 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
       rotationY: 90,
       opacity: 0,
       scale: 0.8,
-      duration: 0.8,
-      delay: index * 0.15,
+      duration: 0.4,
+      delay: index * 0.08,
       ease: 'back.out(1.7)',
       transformOrigin: 'center center'
     });

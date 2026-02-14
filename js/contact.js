@@ -27,8 +27,8 @@ if (typeof gsap !== 'undefined') {
   });
 }
 
-// Initialize EmailJS - Replace with your Public Key
-emailjs.init('YOUR_PUBLIC_KEY'); // Get from EmailJS Dashboard
+// Initialize EmailJS
+emailjs.init('iX5aizFdNax10Jp4W');
 
 // Contact form submission
 const contactForm = document.getElementById('contactForm');
@@ -49,10 +49,11 @@ if (contactForm) {
       return;
     }
     
-    // Validate email format
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+    // Validate email format with required @ and domain extensions
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|in|org|net|edu|gov|co\.in|ac\.in)$/.test(emailInput.value)) {
       message.className = 'form-message error';
-      message.textContent = 'Please enter a valid email address.';
+      message.textContent = 'Email must contain @ symbol and valid domain (.com, .in, .org, .net, .edu, .gov, .co.in, .ac.in)';
+      emailInput.focus();
       return;
     }
     
@@ -60,23 +61,18 @@ if (contactForm) {
     submitBtn.textContent = 'Sending...';
     
     const formData = {
-      name: document.getElementById('contactName').value,
-      email: emailInput.value,
+      from_name: document.getElementById('contactName').value,
+      from_email: emailInput.value,
       phone: phoneInput.value,
       country: document.getElementById('contactCountry').value,
       neet_score: document.getElementById('contactNeet').value,
       course: document.getElementById('contactCourse').value,
       message: document.getElementById('contactMessage').value || 'No additional details provided',
-      to_email: 'medindiacag@gmail.com' // Your company email
+      to_email: 'medindiacag@gmail.com'
     };
     
     try {
-      // Send email via EmailJS
-      await emailjs.send(
-        'YOUR_SERVICE_ID',    // Replace with your Service ID
-        'YOUR_TEMPLATE_ID',   // Replace with your Template ID
-        formData
-      );
+      await emailjs.send('service_3x6oz4q', 'template_1sd101t', formData);
       
       message.className = 'form-message success';
       message.textContent = 'Thank you! Your message has been sent successfully. Our team will contact you soon.';
