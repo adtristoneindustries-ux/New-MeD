@@ -63,9 +63,10 @@ body {
 }
 
 .logo img {
-  height: 90px;
+  height: 125px;
   width: auto;
   transition: transform 0.3s ease;
+  margin-top: 8%;
 }
 
 .logo:hover img {
@@ -209,6 +210,7 @@ footer {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  align-items: center;
 }
 
 .social-icons a {
@@ -221,6 +223,26 @@ footer {
   justify-content: center;
   transition: transform 0.3s, background 0.3s;
   position: relative;
+}
+
+.social-follow-text {
+  color: #1FA6A8;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  letter-spacing: 0.5px;
+  animation: followPulse 2s ease-in-out infinite;
+}
+
+@keyframes followPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(5px);
+  }
 }
 
 .social-icons a svg {
